@@ -1,8 +1,8 @@
 This is a fork of https://github.com/QzhouZ/Cordova-Framework7-React-Webpack/
 
 Changes:
- -- React 0.13->0.14
-- + React DOM 
+ - React 0.13->0.14
+ - + React DOM 
  
  
 [Framework7](http://f7cn.com/)      
