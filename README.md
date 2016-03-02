@@ -1,48 +1,53 @@
-# 介绍
-基于Cordova + Framework7 + React + Webpack构建混合app，支持React代码热加载
+This is a fork of https://github.com/QzhouZ/Cordova-Framework7-React-Webpack/
 
-[Framework7中文官网](http://f7cn.com/)      
-[React中文官网](http://reactjs.cn/)
-
-# 开发说明
+Changes:
+ - React 0.13->0.14
+ - + React DOM 
  
-## 目录结构说明
+ 
+[Framework7](http://f7cn.com/)      
+[React](http://reactjs.cn/)
+
+##Project File
 
 ```
 
-│ www 静态资源文件，用于cordova打包
-        ├─data<—————测试数据相关文件
-        ├─fonts<—————字体文件
-        ├─img<—————图片
-        ├─build<—————编译后的js文件
-        ├─lib<—————第三方不适合编译的库
-        ├─view<—————页面文件
-        ├─app.less<—————页面样式(less)入口文件
-        ├─index.html<起始页面
-        └─src 源文件
-           ├─less<—————less库
-           ├─lib<—————可以编译的第三方库
-           ├─view<—————react页面组件
-           ├─app.less<—————入口css文件
-           └─app.js<—————入口js文件
+│  www static resource file for package cordova
+         ├─data <----- test data related files
+         ├─fonts <----- font files
+         ├─img <----- Photos
+         ├─build <js file ----- compiled
+         ├─lib <----- not suitable third party libraries compiled
+         ├─view <----- paging file
+         ├─app.less <----- page style (less) file entry
+         ├─index.html <start page
+         └─src source file
+            ├─less <----- less library
+            ├─lib <----- third-party libraries can be compiled
+            ├─view <----- react page components
+            ├─app.less <----- entrance css file
+            └─app.js <----- entry js file
 
 ```
 
-## 开发环境
-需要安装Node、Cordova、NPM、Babel5、Webpack
+## This project is built with
+Node、Cordova、NPM、Babel5、Webpack
 
-## 安装npm插件
+## initializing the project
 ``npm install``
 
-## 开启开发服务
-``npm start``，开启服务
+## Building the project
+``npm run build``
 
-然后在浏览器地址输入``http://127.0.0.1:3000/www/index.html``即可预览项目
+## start the server
+``npm start`
 
-## 相关命令
+Open this url in your browser ``http://127.0.0.1:3000/www/index.html``
 
-- ``npm run test``真机同步测试，只支持Android，需要连上Android手机
-- ``npm run android``Android打包
-- ``npm run ios``IOS打包
+## Commands
+
+- ``npm run test``
+- ``npm run android`` compiling android project using cordova 
+- ``npm run ios``compiling android project using cordova 
 
 
