@@ -14,8 +14,11 @@ module.exports = function(options) {
         },
         module: {
             loaders: [{
-                test: /\.jsx?$/,
-                loaders: ['babel'],
+                test: /\.js?$/,
+                loader: 'babel',
+                query: {
+                    presets: ['react']
+                },
                 exclude: /node_modules/
             },{
               test: /\.less$/,
@@ -50,7 +53,7 @@ module.exports = function(options) {
             new webpack.NoErrorsPlugin()
         ];
         config.output.publicPath = '/www/build/';
-        config.module.loaders[0].loaders.unshift('react-hot');
+        // config.module.loaders[0].loaders.unshift('react-hot');
     } else {
         config.plugins = [
             new ExtractTextPlugin("app.css")
