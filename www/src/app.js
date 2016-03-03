@@ -7,7 +7,6 @@
 var React = require('react');
 var ReactDOM= require('react-dom');
 var Unit = require('lib/unit');
-var FooterBar = require('view/footer_bar');
 require('./app.less');
 window.$$ = Framework7.$;
 
@@ -53,20 +52,7 @@ function loadComponent(page, query) {
 }
 // 初始化起始页
 function initPage() {
-    loadComponent('home');
-    // 加载快速菜单
-    loadComponent('quick_menu');
-    $$('.footer-bar').each(function(index) {
-        var id = $$(this).attr('id');
-        initFooterBar(id, index);
-    });
-}
-// 初始化底部导航
-function initFooterBar(footId, index) {
-    ReactDOM.render(
-        <FooterBar index={index} />,
-        document.getElementById(footId)
-    );
+    loadComponent('list');
 }
 // android
 if (F7.device.android) {
@@ -83,4 +69,3 @@ if (F7.device.android) {
         }
     }, false);
 }
-

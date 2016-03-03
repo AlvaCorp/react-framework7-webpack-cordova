@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.zlzkj.zane" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>preorder</name>
+<widget id="com.omargh.contactsreact" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>ContactsREACT</name>
     <description>
-        By Zane
+        By Omar GHADER
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        448482356@qq.com
+    <author email="ghader@etud.insa-toulouse.fr" href="http://cordova.io">
+        ghader@etud.insa-toulouse.fr
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" version="1" />
